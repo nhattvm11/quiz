@@ -1,0 +1,47 @@
+:host {
+  height: 100%;
+}
+
+.question-box {
+  /* padding: 50px; */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.card {
+  max-width: 500px;
+  padding: 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.question p {
+  margin-bottom: 5px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  color: #fff;
+}
+
+button:hover {
+  border-color: #fff;
+  background-color: #F0D702
+}
+
+.message {
+  color: #e74c3c
+}

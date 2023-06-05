@@ -1,0 +1,26 @@
+<div class="question-box">
+  <img src="../../assets/images/question_image.png" alt="" />
+
+  <!-- <div *ngIf="questions[currentQuestion]"> -->
+  <div class="question">
+    <p>Question {{currentQuestion + 1}}/{{questions.length}}:</p>
+    <h3>{{ questions[currentQuestion]?.questionText }}</h3>
+  </div>
+
+  <div *ngIf="showMsg" class="message">
+    <p>Answer is invalid</p>
+  </div>
+
+  <div class="options">
+    <div *ngFor="let option of questions[currentQuestion]?.options; let i = index" (click)="select(option)">
+      <app-answer #appAnswer [selected]="option.isSelected" [option]="option" [submitted]="submitted"  [border]="option.status"/>
+    </div>
+  </div>
+
+  <div class="btn-container">
+    <button class="btn" (click)="submitAnswer()">
+      <i class="fas fa-arrow-right"></i>
+    </button>
+  </div>
+  <!-- </div> -->
+</div>

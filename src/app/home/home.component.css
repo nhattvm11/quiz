@@ -1,0 +1,32 @@
+
+:host {
+  height: 100%;
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.text-container {
+  text-align: center;
+}
+
+.btn {
+  border-radius: 15px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #3498db;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btn:hover {
+  background-color: #F0D702;
+  color: #fff
+}
+
+img {
+  max-width: 50%;
+}

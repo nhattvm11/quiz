@@ -1,0 +1,13 @@
+.app {
+  /* background-image: url(../assets/images/home.png) no-repeat center/cover; */
+  background:linear-gradient(to bottom,#3498db, #8e44ad);
+  height: 750px;
+  width: 350px;
+  /* background-image: url(../assets/images/home.png) no-repeat center/cover; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 55px;
+  padding: 10px 20px;
+  position: relative;
+}

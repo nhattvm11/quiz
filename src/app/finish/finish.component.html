@@ -1,0 +1,32 @@
+<div id="finish">
+  <div class="banner">
+    <div *ngIf="isGood; else retry">
+      <img src="../../assets/images/good.png" alt="" />
+      <div class="text-group">
+        <h3>Congratulations!!</h3>
+        <p>You are amazing</p>
+        <p>
+          You got {{ correctAnswerNo }} of {{ questionNo }} in
+          {{ time }} seconds
+        </p>
+      </div>
+    </div>
+
+    <ng-template #retry>
+      <img src="../../assets/images/retry.png" alt="" />
+      <div class="text-group">
+        <h3>Completed!</h3>
+        <p>Better luck next time!</p>
+        <p>
+          You got {{ correctAnswerNo }} of {{ questionNo }} in
+          {{ time }} seconds
+        </p>
+      </div>
+    </ng-template>
+
+    <div class="button-group">
+      <button class="btn btn-info" routerLink="/">Play again</button>
+      <!-- <button class="btn btn-warning" routerLink="/review">Review</button> -->
+    </div>
+  </div>
+</div>
